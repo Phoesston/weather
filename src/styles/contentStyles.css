@@ -1,0 +1,29 @@
+@import url(variables.css);
+
+.content-header{
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+
+.content-header #add-task{
+    background-color: var(--primary-color);
+    color: var(--background-color);
+    border: none;
+    border-radius: 50%;
+    width: 22px;
+    height: 22px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 8px rgba(74, 144, 226, 0.3);
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.content-header #add-task:hover{
+    background-color: var(--accent-color);
+    box-shadow: 0 6px 12px rgba(49, 151, 149, 0.5);
+    transform: scale(1.1);
+}

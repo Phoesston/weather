@@ -1,0 +1,14 @@
+:root {
+  --word-color: #2d3748;
+  --primary-color: #4a90e2;         /* calming blue */
+  --accent-color: #357ac9;          /* deeper accent blue */
+  --background-color: #ffffff;
+  --overlay-color: rgba(0, 0, 0, 0.5);
+  --input-border: #d1d5db;
+  --modal-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
+  --hover-bg: #e6f0fa;
+  --button-bg: var(--primary-color);
+  --button-hover-bg: var(--accent-color);
+  --nav-hover-bg: #f0f4f8;
+  --svg-bg: #d1e3f8;
+}

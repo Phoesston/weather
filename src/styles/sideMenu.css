@@ -1,0 +1,122 @@
+@import url('variables.css');
+
+.side-nav {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin-top: 1rem;
+  margin-bottom: 3rem;
+}
+
+.side-nav div {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.side-nav div:hover {
+  background-color: var(--nav-hover-bg);
+}
+
+.side-nav svg {
+  width: 20px;
+  height: 20px;
+  background-color: var(--svg-bg);
+  border-radius: 4px;
+}
+
+/* Nav effects*/
+
+.side-nav div:hover {
+  border: 1px var(--accent-color);
+  box-shadow: 0 6px 12px rgba(49, 151, 149, 0.5);
+  transform: scale(1.1);
+}
+
+
+
+/* Projects side */
+
+#projects {
+  margin-top: 2.5rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid var(--input-border);
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+
+.project-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1.25rem;
+}
+
+
+.project-header h2 {
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: var(--word-color);
+  margin: 0;
+  letter-spacing: 0.03em;
+}
+
+
+#add-project {
+  background-color: var(--primary-color);
+  color: var(--background-color);
+  border: none;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  font-size: 1.5rem;
+  line-height: 0;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 8px rgba(74, 144, 226, 0.3);
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+#add-project:hover {
+  background-color: var(--accent-color);
+  box-shadow: 0 6px 12px rgba(49, 151, 149, 0.5);
+  transform: scale(1.1);
+}
+
+
+#project-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+
+.project-item {
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  background-color: var(--background-color);
+  cursor: pointer;
+  color: var(--word-color);
+  box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+  transition: background-color 0.2s ease;
+}
+
+.project-item:hover {
+    border: 1px var(--accent-color);
+    box-shadow: 0 6px 12px rgba(49, 151, 149, 0.5);
+    transform: scale(1.1);
+}
+
+.project-item.selected {
+  background-color: var(--primary-color);
+  color: var(--background-color);
+  font-weight: 600;
+}
+
